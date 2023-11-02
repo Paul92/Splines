@@ -1,7 +1,9 @@
 # Differential Splines library
 
-A different implementation of the BBS toolbox of Florent Brunet
-(brnt.eu/downloads.php).
+A toolbox for computing differentiable 2D image warps using Bicubic B-Splines.
+More formally, given a set of keypoint matches between two image pairs,
+the toolbox computes a continuous function from one image domain to the other,
+along with its derivatives up to the second order.
 
 The goal is to provide a minimal interface for 2D image warps from one
 reference frame and multiple target frames, which can be used both in C++ and
@@ -15,5 +17,6 @@ documentation and the `examples` directory.
 The C++ implementation is based on SuiteSparse. `cmake` is provided as build
 system. `pybind11` is used for the Python wrapper.
 
-
+## References
+http://www.brnt.eu/downloads.php#bbs
 
